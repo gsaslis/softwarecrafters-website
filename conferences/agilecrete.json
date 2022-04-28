@@ -5,9 +5,11 @@
     "city": "Kolymvari",
     "coordinates": [23.77668015917692,35.55218784292704]
   },
+  "code-of-conduct": "https://agilecrete.org/code-of-conduct/",
   "next-date": {
-    "start": "2020-05-20",
-    "end": "2020-05-23"
+    "start": "2022-06-09",
+    "end": "2020-06-12"
   },
   "icon": "icons/agilecrete_favicon_64.png"
 }
+
