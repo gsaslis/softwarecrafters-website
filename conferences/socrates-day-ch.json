@@ -1,0 +1,11 @@
+{
+  "name": "SoCraTes Day Switzerland",
+  "url": "http://socrates-day.ch/",
+  "next-date": {
+    "start": "2020-09-17",
+    "end": "2020-09-17"
+  },
+  "location": {
+    "coordinates": [8.55399, 47.36742]
+  }
+}

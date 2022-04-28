@@ -1,0 +1,11 @@
+{
+  "name": "Codefreeze",
+  "url": "https://www.codefreeze.fi/",
+  "location": {
+    "coordinates": [27.4315, 68.3752]
+  },
+  "next-date": {
+    "start": "2021-01-09",
+    "end": "2021-01-16"
+  }
+}

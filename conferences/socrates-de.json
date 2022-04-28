@@ -1,0 +1,12 @@
+{
+  "name": "SoCraTes Germany",
+  "url": "https://www.socrates-conference.de/",
+  "code-of-conduct": "https://www.socrates-conference.de/values",
+  "next-date": {
+    "start": "2020-08-27",
+    "end": "2020-08-30"
+  },
+  "location": {
+    "coordinates": [9.85963, 53.00146]
+  }
+}

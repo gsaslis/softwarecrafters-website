@@ -22,13 +22,13 @@ yarn watch            # Run the watch task
 yarn test             # Validate the present schemata
 ```
 
-## 🌐 Adding your community
+## 🌐 Adding your community / conference
 
-If you want to add your local community to the map, please have a look at how the [other communities](communities/) added their community. There is [a JSON schema](communities_schema.json) your `community.json` is validated against through Travis.
+If you want to add your local community / conference to the map, please have a look at how the [other communities](communities/) added their community (resp. [conferences](conferences/)). There is [a JSON schema](communities_schema.json) your `community.json` is validated against through Travis (resp. for [conferences](conferences_schema.json)).
 
 1. Fork this repository
-2. Create a new file in `communities/${YOURCITYNAME}.json`
-3. Enter valid JSON as of [the schema](communities_schema.json)
+2. Create a new file in `communities/${YOURCITYNAME}.json` (resp. `conferences/${YOURCONFERENCE}.json`)
+3. Enter valid JSON as of [the schema](communities_schema.json) (resp. [conferences_schema.json](conferences_schema.json))
 4. Commit & push your change
 5. Create a Pull Request against this repository
 
@@ -37,6 +37,29 @@ If you want to add your local community to the map, please have a look at how th
 ...can be very tricky, which is why we're logging the current position of your mouse every time you click somewhere on the map.
 
 ![GIF showing how a mouse click logs the coordinates under the map to the console](docs/finding_coordinates.gif)
+
+## 🌐 Showing upcoming conferences on your conference page
+
+A lot of the conferences listed here also list their "sibling"-conferences on their website so your attendees might be inspired to visit another conference in our communities. We highly encourage you to do that and provide a couple of ways of sourcing our data, either live or at build-time of your website:
+
+- [`conferences.json`](https://softwarecrafters.org/conferences.json) contains all conferences (including past conferences right now).
+- [`conferences.js`](https://softwarecrafters.org/conferences.js) is a `jsonp`script that will call the function `window.softwarecraft_conferences_callback` with the exact same data as is contained in `conferences.json`.
+- See [`conferences_schema.json`](./conferences_schema.json) for a JSON-schema of an individual conference. The JSON will always contain an array of these.
+
+### Example code (not tested) 
+
+```html
+<script type="application/javascript">
+window.softwarecraft_conferences_callback = function(conferences) {
+  console.log("Received conferences", conferences);
+  for(let conference of conferences) {
+    document.write(conference.name)
+  }
+}
+</script>
+<script type="application/javascript" src="https://softwarecrafters.org/conferences.js"></script>
+
+``` 
 
 ## 👍 Contributing to the website
 

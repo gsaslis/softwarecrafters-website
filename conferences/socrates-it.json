@@ -1,0 +1,12 @@
+{
+  "name": "SoCraTes Italy",
+  "url": "http://www.socrates-conference.it/",
+  "code-of-conduct": "http://www.socrates-conference.it/",
+  "next-date": {
+    "start": "2020-06-04",
+    "end": "2020-06-06"
+  },
+  "location": {
+    "coordinates": [12.57958,44.06923]
+  }
+}
